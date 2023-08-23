@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/transparent"
+    tools:context=".Activity.MainActivity">
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/Button_id_mood_01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#5cc2f2"
+                android:padding="2dp">
+
+                <ImageView
+                    android:id="@+id/icon_mood"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/emoji1" />
+
+                <TextView
+                    android:id="@+id/nilai_mood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Psikolog Terdekat"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@id/tanggal_mood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/nilai_mood"
+                    android:layout_alignEnd="@+id/nilai_mood"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginEnd="-80dp"
+                    android:text="Psikolog Terdekat"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/konten_mood"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tanggal_mood"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Yuk kunjugi psikolog terdekat dari Politeknik Astra jika kamu butuh bantuan"
+                    android:textColor="@android:color/black"
+                    android:textSize="8dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

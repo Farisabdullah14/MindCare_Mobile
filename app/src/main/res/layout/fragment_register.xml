@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="161dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/asset1" />
+
+    <TextView
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textColor="#2d66dc"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextNIM"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forget"
+            android:gravity="start"
+            android:paddingLeft="20dp"
+            android:hint="NIM"
+            android:textColor="#2d66dc"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forget"
+            android:gravity="start"
+            android:paddingLeft="20dp"
+            android:hint="Nama"
+            android:textColor="#2d66dc"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:inputType="text"/>
+
+        <RadioButton
+            android:id="@+id/rbLakiLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki" />
+
+        <RadioButton
+            android:id="@+id/rbPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
+
+        <EditText
+            android:id="@+id/editTextAlamat"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:hint="Alamat"
+            android:textColor="#2d66dc"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="start"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:hint="Password"
+            android:textColor="#2d66dc"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="start"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:hint="Confirm Password"
+            android:textColor="#2d66dc"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="start"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:text="Register"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign Up"
+            android:textColor="#2d66dc"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+</LinearLayout>

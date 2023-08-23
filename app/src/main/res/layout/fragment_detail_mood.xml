@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_mood"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/colorUpBiru"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="800dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/mood_jenis"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/left_icon"
+            android:text="Detail Mood"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/mood_gambar"
+        android:layout_width="165dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ill_jurnal_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topbar" />
+
+    <TextView
+        android:id="@+id/mood_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+
+
+        android:text="VEGITARIAN FOOD"
+        android:textColor="#FF6813"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/mood_gambar"
+        app:layout_constraintTop_toBottomOf="@+id/mood_judul" />
+
+    <TextView
+        android:id="@+id/mood_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Float Cake Vietnam"
+        android:textColor="#091020"
+        android:textSize="20sp"
+        android:background="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@+id/textmood"
+        app:layout_constraintTop_toBottomOf="@+id/textmood" />
+
+
+    <TextView
+        android:id="@+id/textmood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Mood Kamu"
+        android:textColor="#091020"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mood_gambar"
+        app:layout_constraintTop_toBottomOf="@+id/topbar" />
+
+
+
+    <TextView
+        android:id="@+id/mood_konten"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="2dp"
+        android:text="Banh troi are small white  made of brown sugar, wrapped in glutinous rice flour. The name floating cakes came about from the way it is actually cooked."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="2dp"
+        android:textSize="18dp"
+        android:text="Teringat kisah cerita masa lalu kamu"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mood_gambar" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

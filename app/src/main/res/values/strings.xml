@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">MindCare</string>
+    <string-array name="myarray">
+        <item>Jenis Kelamin</item>
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="icon_array">
+        <item>Icon 1</item>
+    ++++    <item>Icon 2</item>
+        <item>Icon 3</item>
+        <item>Icon 4</item>
+        <item>Icon 5</item>
+    </string-array>
+
+
+
+    <string-array name="choosen">
+        <item>Pilih</item>
+        <item>Kesehatan Mental</item>
+        <item>Kesehatan Hati</item>
+        <item>Kasih Sayang</item>
+        <item>Kesehatan Fisik</item>
+        <item>Semangat Berprestasi</item>
+
+    </string-array>
+
+
+    <string-array name="type">
+        <item>Pilih</item>
+        <item>Audio</item>
+        <item>Video</item>
+        <item>Web</item>
+
+    </string-array>
+
+    //Headings
+
+    <string name="heading_one">Selamat datang di MindCare</string>
+    <string name="heading_two">Kenali Emosi Anda</string>
+    <string name="heading_three">Grafik dan Analisis</string>
+    <string name="heading_fourth">Jaga Kesehatan Mental Anda</string>
+
+    //Description
+    <string name="desc_one">Mari mengawasi dan memahami perasaan Anda dengan MindCare - Mood Tracker, aplikasi kesehatan mental yang kuat.</string>
+    <string name="desc_two">Catat perasaan Anda setiap hari, identifikasi pola emosi, dan kembangkan keseimbangan emosional yang lebih baik.</string>
+    <string name="desc_three">Lihat grafik tren perasaan Anda, temukan pola yang mungkin terjadi, dan dapatkan wawasan berharga untuk pertumbuhan pribadi.</string>
+    <string name="desc_fourth">Dapatkan saran-saran berharga untuk mengatasi stres, meningkatkan suasana hati, dan merawat kesehatan mental Anda dengan MindCare.</string>
+
+</resources>

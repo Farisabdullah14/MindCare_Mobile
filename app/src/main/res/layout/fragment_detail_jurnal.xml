@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_jurnal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/colorUpBiru"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="800dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/jurnal_jenis"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/left_icon"
+            android:text="Topik Jurnal"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/jurnal_gambar"
+        android:layout_width="376dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ill_jurnal_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topbar" />
+
+    <TextView
+        android:id="@+id/jurnal_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="VEGITARIAN FOOD"
+        android:layout_marginTop="10dp"
+
+        android:textColor="#FF6813"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jurnal_judul" />
+
+    <TextView
+
+        android:id="@+id/jurnal_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:text="Float Cake Vietnam"
+        android:textColor="#091020"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jurnal_gambar" />
+
+    <TextView
+        android:id="@+id/jurnal_konten"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+
+        android:lineSpacingExtra="2dp"
+        android:text="Banh troi are small white  made of brown sugar, wrapped in glutinous rice flour. The name floating cakes came about from the way it is actually cooked."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jurnal_tanggal" />
+
+
+
+    <id.ac.polman.astra.kelompok2MI2B.mindcare.helper.LinkifiedTextView
+        android:id="@+id/jurnal_sumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="16dp"
+        android:lineSpacingExtra="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/jurnal_konten"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="https://maps.google.com"
+        android:autoLink="web"
+        android:textColor="#FFFFFFFF"
+        android:textSize="10sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

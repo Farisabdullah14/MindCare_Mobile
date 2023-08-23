@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_notifikasi"
+    android:background="@color/colorUpBiru"
+    tools:context=".Activity.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorUpBiru"
+        android:id="@+id/fragment_home2">
+
+        <RelativeLayout
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/colorUpBiru"
+            tools:ignore="MissingConstraints"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/jurnal_jenis"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/left_icon"
+                android:text="Notifikasi"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/hp_layout"
+            android:layout_width="440dp"
+            android:layout_height="742dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cvbg_full"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notifikasi_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                />
+
+            <include layout="@layout/placeholder_view" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
